@@ -1,14 +1,18 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
+    // Задание 1 - переменные разных типов
+    val name: String = "Kowalski"
+    val positiveNumber: Int = 10
+    val negativeNumber: Int = -10
+    val myByte: Byte = 10
+    val isPositive: Boolean = true
 
-    for (i in 1..5) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
-    }
+    // Задание 2 (сами методы в соседнем Tasks.kt)
+    greeting(name)
+    // Задание 3 - 4
+    printIsNegative(positiveNumber)
+    printIsNegative(negativeNumber)
+    // Задание 5
+    printNumbers()
 }
